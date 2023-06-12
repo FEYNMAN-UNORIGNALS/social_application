@@ -1,5 +1,5 @@
 # social_application
-To store the necessary and required codes for the application. 
+To store the required codes for the application. 
 
 
 
