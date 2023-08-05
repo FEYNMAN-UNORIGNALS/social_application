@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>tease</title>
+    <title>Matrix Theme - Greetings</title>
+    
     <style>
-        /* Common styles for all screen sizes */
         body {
             background-color: black;
             font-family: 'Courier New', monospace;
-            font-size: 48px;
+            font-size: 60px;
             text-align: center;
             height: 100vh;
             display: flex;
@@ -19,13 +19,12 @@
             color: #00FF00;
             text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 40px #00FF00;
         }
-         
+
         .glitch-text {
             position: relative;
             display: inline-block;
             animation: glitch 2s infinite;
             margin-top: -20px;
-            font-size: 40px;
         }
 
         .glitch-text::before {
@@ -35,7 +34,7 @@
             left: 0;
             color: #0f0;
             clip: rect(44px, 450px, 56px, 0);
-            animation: noise 2s infinite linear alternate-reverse;
+            animation: noise 1s infinite linear alternate-reverse;
         }
 
         @keyframes glitch {
@@ -56,9 +55,8 @@
             }
             4% {
                 clip: rect(56px, 9999px, 8px, 0);
-                font-size: 40px;
             }
-            /* Add your preferred glitch noise frames here, keeping font-size adjustments as needed for mobile */
+            /* ... Add your preferred glitch noise frames here ... */
         }
 
         .linkedin-id {
@@ -70,7 +68,6 @@
             text-decoration: none;
             font-size: 20px;
         }
-
         .linkedin-container {
             display: flex;
             justify-content: center;
@@ -81,57 +78,24 @@
         }
 
         .linkedin-link {
-            margin: 0 50px;
+            margin: 0 60px; /* Increase the margin to 60px for larger distance */
             color: #00FF00;
             text-decoration: none;
-            font-size: 32px;
+            font-size: 22px;
         }
-
-        /* Media queries for different screen sizes */
-        @media (max-width: 2040px) {
-            body {
-                font-size: 36px;
-            }
-
-            .glitch-text {
-                font-size: 72px;
-            }
-
-            .linkedin-link {
-                font-size: 58px;
-                margin: 0 50px;
-            }
-
-            .static-sign {
-                font-size: 40px;
-            }
-        }
-
-        @media (max-width: 1440px) {
-            .static-sign {
-                font-size: 50px;
-            }
-        }
-
-        @media (max-width: 1080px) {
-            .static-sign {
-                font-size: 50px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .static-sign {
-                font-size: 40px;
-            }
-        }
+        
     </style>
 </head>
+
 <body>
-    <div class="static-sign" style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); color: #00FF00;">
-        Est'd 2022
+
+    
+    <!-- Static date at the top -->
+    <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); font-size: 24px; color: #00FF00;">
+        1  |  09  |  2023
     </div>
 
-    <!-- Greeting text with glitch effect (no link) -->
+    <!-- Greeting text with glitch effect -->
     <div class="glitch-text" data-text="FEYNMAN_UNORIGNALS">FEYNMAN_UNORIGNALS</div>
 
     <script>
@@ -161,8 +125,9 @@
 
     <!-- LinkedIn links for Gaurav and Om -->
     <div class="linkedin-container">
-        <a class="linkedin-link" href="https://www.linkedin.com/in/gauraviiitg" target="_blank">GAURAV CHOUDHARY</a>
-        <a class="linkedin-link" href="https://www.linkedin.com/in/om-sharma-425774228" target="_blank">OM SHARMA</a>
+        <a class="linkedin-link" href="https://www.linkedin.com/in/gauraviiitg" target="_blank" style="margin: 0 30px;">GAURAV CHOUDHARY</a>
+        <a class="linkedin-link" href="https://www.linkedin.com/in/om-sharma-425774228" target="_blank" style="margin: 0 80px;">OM SHARMA</a>
     </div>
 </body>
+
 </html>
