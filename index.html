@@ -1,203 +1,104 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Glitch Text and Falling Binary Numbers</title>
-    <style>
-        body {
-            background-color: black;
-            margin: 0;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            font-family: 'Courier New', monospace;
-            color: #00FF00;
-            text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 40px #00FF00;
-        }
-
-        canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-
-        .glitch-text-container {
-            position: relative;
-            font-size: 60px;
-            background-color: black;
-            padding: 20px;
-            z-index: 2;
-        }
-
-        .glitch-text {
-            position: relative;
-            display: inline-block;
-            animation: glitch 2s infinite;
-            margin-top: -20px;
-        }
-
-        .glitch-text::before {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            color: #0f0;
-            clip: rect(44px, 450px, 56px, 0);
-            animation: noise 1s infinite linear alternate-reverse;
-        }
-
-        @keyframes glitch {
-            0%, 100% {
-                transform: translate(0);
-            }
-            20%, 40%, 60%, 80% {
-                transform: translate(-5px, 5px);
-            }
-            10%, 30%, 50%, 70%, 90% {
-                transform: translate(5px, -5px);
-            }
-        }
-
-        @keyframes noise {
-    0%, 100% {
-        clip: rect(63px, 9999px, 71px, 0);
-    }
-    4% {
-        clip: rect(56px, 9999px, 8px, 0);
-    }
-    8% {
-        clip: rect(20px, 9999px, 56px, 0);
-    }
-    12% {
-        clip: rect(4px, 9999px, 56px, 0);
-    }
-    16% {
-        clip: rect(48px, 9999px, 4px, 0);
-    }
-    20% {
-        clip: rect(56px, 9999px, 8px, 0);
-    }
-    24% {
-        clip: rect(40px, 9999px, 56px, 0);
-    }
-    28% {
-        clip: rect(16px, 9999px, 48px, 0);
-    }
-    32% {
-        clip: rect(56px, 9999px, 8px, 0);
-    }
-    /* Add more glitch noise frames as needed */
-}
-
-
-        .static-text-container {
-            background-color: black;
-            padding: 10px 20px;
-            z-index: 2;
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .static-text {
-            font-size: 24px;
-            color: #00FF00;
-        }
-
-        .linkedin-link-container {
-            display: flex;
-            position: absolute;
-            bottom: 20px;
-            z-index: 2;
-            background-color: black;
-            padding: 10px 20px;
-        }
-
-        .linkedin-link {
-            color: #00FF00;
-            text-decoration: none;
-            font-size: 22px;
-            margin: 0 20px;
-        }
-
-        /* Change the margin to move the links to the right */
-        .linkedin-link.right {
-            margin-left: 50px;
-            margin-right: 30;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresher's Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Static Text at the Top -->
-    <div class="static-text-container">
-        <div class="static-text">Est'd 2022</div>
+  <div class="containeri">
+    <div class="waviy">
+      <!-- <span style="--i:1">F</span>
+      <span style="--i:2">R</span>
+      <span style="--i:3">E</span>
+      <span style="--i:4">S</span>
+      <span style="--i:5">H</span>
+      <span style="--i:6">E</span>
+      <span style="--i:7">R</span>
+      <span style="--i:8">S</span>
+      <span style="--i:9">'</span>
+      <span style="--i:10"> </span>
+      <span style="--i:11">G</span>
+      <span style="--i:12">U</span>
+      <span style="--i:13">I</span>
+      <span style="--i:14">D</span>
+      <span style="--i:15">E</span>
+       -->
+       <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo4OCwidyI6MTI1MCwiZnMiOjcwLCJmZ2MiOiIjRjFDRTQyIiwiYmdjIjoiI0VGQzgzRCIsInQiOjF9/RnJlc2hlcnMnIEd1aWRl/harry-p.png">
+     </div>
+     <div class="card" style="margin-top: 30px;">
+      <div class="card-body">
+        <div class="intro">
+          <!-- Your introduction content goes here -->
+          Hey there, Freshers: Welcome to IIITG, a place where your coding dreams come to life! We're excited to have you on board, and we understand that starting college can be a mix of excitement and nervousness. But fear not, because at IIITG, we're more than just a campus - we're a close-knit community that will make you feel right at home.
+          Imagine waking up to the sight of breathtaking landscapes every day. The lush green hills, cascading waterfalls, and serene lakes surrounding our campus create a tranquil environment that will inspire your coding adventures. It's a picturesque setting that sets the stage for endless possibilities.
+          Beyond the stunning scenery, it's the people at IIITG who truly make it special. From your fellow students to the professors, we're all here to support each other and create lasting connections. The IIITG community is like one big family, where you'll find friends who share your passion for coding and a genuine desire to help you succeed.
+          Speaking of coding, get ready to be amazed by the diverse range of coding clubs and organizations we have. Whether you're into web development, AI, cybersecurity, or software engineering, you'll find a club that aligns with your interests. These clubs are not just about coding; they're about collaboration, teamwork, and the thrill of exploring the limitless possibilities of technology together. Through these clubs, you'll not only enhance your coding skills but also forge lifelong friendships and make memories that will last a lifetime.
+          But it doesn't end there - at IIITG, we believe in embracing interdisciplinary learning. So, while coding will be at the heart of your journey, you'll also have the opportunity to explore other fascinating fields like robotics, game development, and entrepreneurship. It's about discovering new passions, expanding your horizons, and becoming a well-rounded individual who can approach challenges from multiple perspectives.
+          Beyond academics and coding, IIITG offers a rich tapestry of experiences that will shape your college life. From cultural festivals that celebrate the diversity of our community to sports competitions that ignite your competitive spirit, there's always something exciting happening on campus. These events not only provide entertainment but also foster a sense of belonging and unity among students.
+          As you embark on this extraordinary coding adventure at IIITG, remember that you're not alone. The IIITG community is here to support you, uplift you, and celebrate your achievements. We're thrilled to have you join us, and we can't wait to witness your growth, both as a coder and as an individual.
+          Welcome to IIITG, where the beauty of nature, the warmth of community, and the power of coding come together to create an unforgettable college experience. Get ready to embrace the journey, make lifelong connections, and unlock your true potential. Your adventure awaits!
+        </div>
+      </div>
+  </div>
+
+
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color:#211140; font-size:20px">
+    <div class="container">
+      <a href="index.html" class="navbar-brand mb-0 h1" style="color:aliceblue;">
+        <img class="d-inline-block align-top" src="https://see.fontimg.com/api/renderfont4/1YMv/eyJyIjoiZnMiLCJoIjoxMDEsInciOjEyNTAsImZzIjo4MSwiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/Rkc/bigelow-rules.png" width="30" height="30">
+        Fresher's Guide
+      </a>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0" >
+           <li class="nav-item active">
+            <a href="doc.html" class="nav-link active" style="color:aliceblue;">Documents</a>
+          </li> 
+          <li class="nav-item active">
+            <a href="lugg.html" class="nav-link active" style="color:aliceblue;">Luggage</a>
+          </li> 
+          <li class="nav-item active">
+            <a href="fabr.html" class="nav-link active" style="color:aliceblue;">Fabrics</a>
+          </li> 
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="electronicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:aliceblue;">Electronics</a>
+            <ul class="dropdown-menu" aria-labelledby="electronicsDropdown">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="gadgetsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black;">Gadgets</a>
+                <ul class="dropdown-menu" aria-labelledby="gadgetsDropdown">
+                  <li><a href="laptop.html" class="dropdown-item">Laptop</a></li>
+                  <li><a href="calc.html" class="dropdown-item">Calculator</a></li>
+                </ul>
+              </li>
+              <li><a href="appl.html" class="dropdown-item">Appliances</a></li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a href="reachus.html" class="nav-link active" style="color:aliceblue;">Reach Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input type="text" class="form-control me-2">
+          <button type="submit" class="btn btn-primary" style="background-color:gold;">Search</button>
+        </form>
+      </div>
     </div>
+  </nav>
 
-    <!-- Glitch Text -->
-    <div class="glitch-text-container">
-        <div class="glitch-text" data-text="FEYNMAN_UNORIGINALS">FEYNMAN_UNORIGINALS</div>
-    </div>
-
-    <!-- LinkedIn Links -->
-    <div class="linkedin-link-container">
-        <a class="linkedin-link" href="https://www.linkedin.com/in/gauraviiitg" target="_blank">GAURAV CHOUDHARY</a>
-        <a class="linkedin-link right" href="https://www.linkedin.com/in/om-sharma-425774228" target="_blank">OM SHARMA</a>
-    </div>
-
-    <!-- Falling Binary Numbers -->
-    <canvas id="binaryCanvas"></canvas>
-
-    <script>
-        // Glitch Text Animation
-        const glitchText = document.querySelector(".glitch-text");
-        const greetings = ["FEYNMAN_UNORIGINALS", "जल्द ही!"];
-        let currentIndex = 0;
-
-        function updateGreeting() {
-            glitchText.textContent = greetings[currentIndex];
-            currentIndex = (currentIndex + 1) % greetings.length;
-        }
-
-        setInterval(updateGreeting, 1000);
-
-        // Binary Numbers Animation
-        var binaryCanvas = document.getElementById('binaryCanvas');
-        var ctx = binaryCanvas.getContext('2d');
-
-        binaryCanvas.width = window.innerWidth;
-        binaryCanvas.height = window.innerHeight;
-
-        var binaryDigits = '01';
-        binaryDigits = binaryDigits.split('');
-
-        var fontSize = 20,
-            columns = binaryCanvas.width / fontSize;
-
-        var drops = [];
-        for (var i = 0; i < columns; i++) {
-            drops[i] = 1;
-        }
-
-        function draw() {
-            ctx.fillStyle = 'rgba(0, 0, 0, .1)';
-            ctx.fillRect(0, 0, binaryCanvas.width, binaryCanvas.height);
-
-            for (var i = 0; i < drops.length; i++) {
-                var digit = binaryDigits[Math.floor(Math.random() * binaryDigits.length)];
-                ctx.fillStyle = '#0f0';
-                ctx.fillText(digit, i * fontSize, drops[i] * fontSize);
-                drops[i]++;
-                if (drops[i] * fontSize > binaryCanvas.height && Math.random() > .95) {
-                    drops[i] = 0;
-                }
-            }
-        }
-
-        setInterval(draw, 33);
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script>
+    // Get the nested dropdown element
+    const gadgetsDropdown = document.getElementById("gadgetsDropdown");
+  
+    // Prevent the nested dropdown from closing when clicking on its child elements
+    gadgetsDropdown.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  </script>
 </body>
 </html>

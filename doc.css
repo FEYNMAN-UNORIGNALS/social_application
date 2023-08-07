@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Griffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    background-image: url('https://i.pinimg.com/originals/6b/a9/f8/6ba9f8f880668e9ddeecac613d5f5913.jpg');
+    /* background-size: cover;
+    background-position: center;
+    perspective: 500px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* font-family: 'Griffy', cursive; */
+    font-family: 'Space Mono', monospace;
+    cursor: url("https://picresize.com/images/rsz_magic-wand_1fa84.png"), auto;
+
+  }
+  .docc{
+    font-size: 1rem;
+    color:black;
+    list-style:square
+    
+  }
+  .heading{
+    font-size: 20px;
+    color: gold;
+
+  }
+  .card {
+    background-color: #c8c4d1; /* Set the background color for the cards */
+    color: black; /* Set the text color for the cards */
+    border: 1px solid #ddd; /* Add a border for the cards */
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902030.jpg");
+    padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      height: 100%; /* Set a fixed height to ensure equal card size */
+  }
+  
+  .card-title {
+    color: #211140; /* Set the color for the card titles */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: black; /* Set the color for the card content text */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

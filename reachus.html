@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresher's Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="doc.css">
+</head>
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color:#211140; font-size:20px">
+    <div class="container">
+      <a href="index.html" class="navbar-brand mb-0 h1" style="color:aliceblue;">
+        <img class="d-inline-block align-top" src="https://see.fontimg.com/api/renderfont4/1YMv/eyJyIjoiZnMiLCJoIjoxMDEsInciOjEyNTAsImZzIjo4MSwiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/Rkc/bigelow-rules.png" width="30" height="30">
+        Fresher's Guide
+      </a>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0" >
+           <li class="nav-item active">
+            <a href="doc.html" class="nav-link active" style="color:aliceblue;">Documents</a>
+          </li> 
+          <li class="nav-item active">
+            <a href="lugg.html" class="nav-link active" style="color:aliceblue;">Luggage</a>
+          </li> 
+          <li class="nav-item active">
+            <a href="fabr.html" class="nav-link active" style="color:aliceblue;">Fabrics</a>
+          </li> 
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="electronicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:aliceblue;">Electronics</a>
+            <ul class="dropdown-menu" aria-labelledby="electronicsDropdown">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="gadgetsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black;">Gadgets</a>
+                <ul class="dropdown-menu" aria-labelledby="gadgetsDropdown">
+                  <li><a href="laptop.html" class="dropdown-item">Laptop</a></li>
+                  <li><a href="calc.html" class="dropdown-item">Calculator</a></li>
+                </ul>
+              </li>
+              <li><a href="appl.html" class="dropdown-item">Appliances</a></li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a href="reachus.html" class="nav-link active" style="color:aliceblue;">Reach Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input type="text" class="form-control me-2">
+          <button type="submit" class="btn btn-primary" style="background-color:gold;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="contain">
+    <div class="heading" style="text-align: center; margin-top:-70px">
+        <h1>REACH US</h1>
+        <br><br><br>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Airport</h5>
+            <ul class="docc">
+              <li>The nearest airport is Lokpriya Gopinath Bordoloi International Airport in Guwahati, which is approximately 6.5 km away from IIITG.</li><br>
+              <li>After arriving at the airport, you can easily find cab services available outside. If you prefer affordable travel options, you can also step outside and look for electric rickshaws.</li><br>
+              <li>Additionally, transport vans can be found if you head towards the highway.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Railway Stations</h5>
+            <ul class="docc">
+              <li>Mirza Railway Station: This station is the closest to IIITG, located about 5 km away. However, there is no direct connectivity from other parts of India to Mirza Railway Station. You can connect to Kamakhya Railway Station or Guwahati Railway Station to reach Mirza.</li><br>
+              <li>Guwahati Railway Station: This is a major railway station located approximately 26 km from IIITG. After reaching Guwahati Railway Station, you can easily find cabs for your onward journey. Unfortunately, there is no direct bus route available from the railway station.</li><br>
+              <li>Kamakhya Railway Station: This station is situated around 19 km away from IIITG and is a common stop for many trains coming from the Siliguri corridor.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Cards Section -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script>
+    // Get the nested dropdown element
+    const gadgetsDropdown = document.getElementById("gadgetsDropdown");
+
+    // Prevent the nested dropdown from closing when clicking on its child elements
+    gadgetsDropdown.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  </script>
+</body>
+</html>

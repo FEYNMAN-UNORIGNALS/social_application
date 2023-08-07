@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresher's Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="doc.css">
+  <style>
+    body{
+      min-height: 160vh;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color:#211140; font-size:20px">
+    <div class="container">
+      <a href="index.html" class="navbar-brand mb-0 h1" style="color:aliceblue;">
+        <img class="d-inline-block align-top" src="https://see.fontimg.com/api/renderfont4/1YMv/eyJyIjoiZnMiLCJoIjoxMDEsInciOjEyNTAsImZzIjo4MSwiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/Rkc/bigelow-rules.png" width="30" height="30">
+        Fresher's Guide
+      </a>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0" >
+           <li class="nav-item active">
+            <a href="doc.html" class="nav-link active" style="color:aliceblue;">Documents</a>
+          </li> 
+          <li class="nav-item active">
+            <a href="lugg.html" class="nav-link active" style="color:aliceblue;">Luggage</a>
+          </li> 
+          <li class="nav-item active">
+            <a href="fabr.html" class="nav-link active" style="color:aliceblue;">Fabrics</a>
+          </li> 
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="electronicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:aliceblue;">Electronics</a>
+            <ul class="dropdown-menu" aria-labelledby="electronicsDropdown">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="gadgetsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black;">Gadgets</a>
+                <ul class="dropdown-menu" aria-labelledby="gadgetsDropdown">
+                  <li><a href="laptop.html" class="dropdown-item">Laptop</a></li>
+                  <li><a href="calc.html" class="dropdown-item">Calculator</a></li>
+                </ul>
+              </li>
+              <li><a href="appl.html" class="dropdown-item">Appliances</a></li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a href="reachus.html" class="nav-link active" style="color:aliceblue;">Reach Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input type="text" class="form-control me-2">
+          <button type="submit" class="btn btn-primary" style="background-color:gold;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="contain">
+    <div class="heading" style="text-align: center; margin-top:-70px">
+        <h1>DOCUMENTS</h1>
+        <br><br><br>
+      </div>
+    
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Documents 1</h5>
+              <ul class="docc">
+                <li>Class X & XII Marksheet/Certificate.</li><br>
+                <li>Identity proof (generally Aadhar card) or any other proof card (PAN card, DL, voting card), etc.</li><br>
+                <li>Category certificate (if applicable as per JOSAA/ CSAB- 2023 website, issued by the competent authority).</li><br>
+                <li>Class X Mark Sheet/Certificate or Aadhaar Card or Birth Certificate (for verification of Date of Birth).</li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Documents 2</h5>
+              <ul class="docc">
+
+                <li>Certificate of category (SC/ST/OBC-NCL/GEN-EWS), if applicable, as per the Government of India format available on the JOSAA - 2023/CSAB - 2023 website,<br> issued by the competent authority.</li><br>
+                <li>Original Certificate for Persons with Disabilities (PwD), if applicable, issued by the competent authority as per JOSAA – 2023/CSAB - 2023 format.</li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Documents 3</h5>
+              <ul class="docc">
+                <li>Medical Certificate (in the specified format of JOSAA - 2023/CSAB - 2023).</li><br>
+                <li>Admit card of JEE (Main).</li><br>
+                <li>JOSAA/CSAB seat allocation letter.</li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Cards Section -->
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script>
+    // Get the nested dropdown element
+    const gadgetsDropdown = document.getElementById("gadgetsDropdown");
+  
+    // Prevent the nested dropdown from closing when clicking on its child elements
+    gadgetsDropdown.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  </script>
+</body>
+</html>
