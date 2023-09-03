@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Griffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-image: url('https://wallpaperaccess.com/full/4511236.jpg');
+    /* background-size: cover;
+    background-position: center;
+    perspective: 500px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+      cursor: url("https://picresize.com/images/rsz_magic-wand_1fa84.png"), auto;
+  }
+  .containeri .waviy {
+    position: relative;
+    margin-left: 3rem;
+  }
+  .containeri .waviy span {
+    /* font-family: 'Griffy', cursive; */
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color:gold;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+    text-align: center;
+    margin-top: 80px;
+    
+  }
+  .card {
+    /*background-color: #c8c4d1; /* Set the background color for the cards */
+    color: black; /* Set the text color for the cards */
+    /*border: 1px solid #ddd; Add a border for the cards */
+    background-image: url("https://previews.123rf.com/images/jessicahyde/jessicahyde2008/jessicahyde200802762/154271024-old-blank-parchment-paper-texture-or-background.jpg");
+    /* padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px; */
+      height: 100%; /* Set a fixed height to ensure equal card size */
+      background-position: center;
+  }
+  
+  .card-title {
+    color: #211140; /* Set the color for the card titles */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: black; /* Set the color for the card content text */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+    .containeri .intro{
+    font-size: 25px;
+    font-weight: bold;
+    color:black;
+    font-family: 'Griffy', cursive;
+
+  }
+  @keyframes flip {
+    0%,90% {
+      transform: rotateY(360deg) 
+    }
+  }
+  .containeri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px; /* Adjust the margin-top value as needed */
+    padding: 0 20px; /* Add padding to the sides for responsiveness */
+  }
+  
+  .intro {
+    max-width: 900px; /* Adjust the max-width value as needed */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+
+  .navbar{
+    /* font-family: 'Griffy', cursive; */
+    font-family: 'Space Mono', monospace;
+  }
+
+  
+  @media (max-width: 767px) {
+    /* Apply responsive styles for screens smaller than 768px */
+    .containeri{
+      margin-top: 80px; /* Adjust the margin-top value as needed */
+    }
+  }
